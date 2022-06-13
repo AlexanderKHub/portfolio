@@ -1,20 +1,23 @@
 header{
-    position:absolute;
+    position:fixed;
     left:0;
     right:0;
     top:0;
     display:flex;
     align-items:center;
-    height:60px;
+    height:100px;
     background-color:black;
     color: white;
     padding-left:20%;
     padding-right:20%;
+    z-index:5;
+    border-bottom:1px solid rgba($color: white, $alpha: 0.1);
     a{
         margin:16px;
         color:white;
         text-decoration: none;
         font-size:18px;
+        transition: 0.2s;
         &:hover{
             color:#ff006f;
         }

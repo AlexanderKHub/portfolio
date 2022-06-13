@@ -1,0 +1,15 @@
+<div class="my-skills-section">
+    <h2 id="my-skills-title" data-aos="fade-left">
+        My Skills
+    </h2>
+    <div class="my-skills-container">
+
+        <div data-aos="fade-left" *ngFor="let skill of mySkills" class="my-skills-white-box" >
+            <div class="my-skills-icon-container">
+                <img src="{{ skill.image }}" alt="">
+            </div>
+            {{ skill.name }} 
+        </div>
+
+    </div>
+</div>

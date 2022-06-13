@@ -2,8 +2,8 @@
     height:70vh;
     color:white;
     background-color:black;
-    padding-left:20%;
-    padding-right:20%;
+    margin-left:20%;
+    margin-right:20%;
     padding-top:160px;
     display:flex;
     justify-content:space-between;
@@ -12,14 +12,14 @@
     }
     img{
         height:300px;
+        width:300px;
         object-fit:cover;
-        border-radius:100%;
+        border-radius:50%;
+        object-position: 100% 30%;
     }
     button{
-        padding-left:64px;
-        padding-right:64px;
-        padding-top:16px;
-        padding-bottom:16px;
+        width:200px;
+        height:60px;
         margin-top:64px;
         background-color:black;
         border:1px solid #35fce2;
@@ -35,3 +35,24 @@
     background-color:black;
 }
 
+
+
+
+.footer{
+    height:100px;
+    width:100%;
+    background-color:white;
+    color:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    img{
+        transition: transform .2s;
+        width:64px;
+        height:64px;
+        &:hover{
+            cursor:pointer;
+            transform: scale(1.2);
+        }
+    }
+}
