@@ -10,6 +10,7 @@ export class MyWorkComponent implements OnInit {
   js_btn_focus:boolean = false;
   all_btn_focus:boolean = false;
   angular_btn_focus:boolean = false;
+  no_slide:boolean = false;
 
   constructor() { }
 

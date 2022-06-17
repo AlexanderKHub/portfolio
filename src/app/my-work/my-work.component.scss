@@ -16,7 +16,7 @@
 
 .project-btn-container{
     margin-top:96px;
-    width:700px;
+    //width:700px;
     gap:32px;
     display:flex;
     justify-content:center;
@@ -119,5 +119,17 @@
   @media(max-width: 1270px){
     .project-cover{
       width:450px !important;
+    }
+  }
+
+  @media(max-width: 670px){
+    .project-cover{
+      width:80vw !important;
+    }
+
+    .project-btn-container{
+      button{
+        width:100px;
+      }
     }
   }

@@ -68,5 +68,33 @@
         flex-direction:column-reverse;
         align-items:center;
         padding-top:100px;
+        margin-left:unset;
+        margin-right:unset;
+    }
+}
+
+@media (max-width: 650px){
+    .introduction-container{
+        margin-left:20px !important;
+        margin-right:20px !important;
+    }
+}
+
+@media (max-width:550px){
+    .footer{
+        .legal-links{
+            display:flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width:450px){
+    .footer{
+        .legal-links{
+            span{
+                font-size:16px !important;
+            }
+        }
     }
 }

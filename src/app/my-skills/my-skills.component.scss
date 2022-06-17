@@ -56,3 +56,29 @@
         height:50%;
     }
 }
+
+ @media(max-width:950px){
+    .my-skills-container{
+        width:80%;
+        padding-bottom:100px;
+    }
+ }
+
+ @media(max-width:650px){
+    .my-skills-icon-container{
+        height:50px;
+        width:50px;
+    }
+
+    .my-skills-white-box{
+        width:100px !important;
+        font-size:14px;
+        span{
+            text-align:center;
+        }
+    }
+
+    .my-skills-icon-container{
+        margin-top: -25px;
+    }
+ }

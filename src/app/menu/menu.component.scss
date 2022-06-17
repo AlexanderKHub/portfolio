@@ -12,6 +12,9 @@ header{
     padding-right:20%;
     z-index:5;
     border-bottom:1px solid rgba($color: white, $alpha: 0.1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
     a{
         margin:16px;
         color:white;
@@ -26,4 +29,11 @@ header{
 
 .spacer{
     flex:1;
+}
+
+@media (max-width:1000px){
+    header{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
 }

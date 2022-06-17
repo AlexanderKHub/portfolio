@@ -66,6 +66,8 @@
     }
 }
 
+
+
 @media (max-width:1060px){
     .about-me-information-container{
         flex-wrap:wrap !important;
@@ -73,6 +75,21 @@
     .about-me-information-box{
         width:40% !important;
     }
-
 }
+
+@media (max-width:700px){
+    .about-me-container{
+        height:auto !important;
+        align-items:center !important;
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width:600px){
+    .about-me-information-box{
+        width: 100% !important;
+    }
+}
+
+
 
