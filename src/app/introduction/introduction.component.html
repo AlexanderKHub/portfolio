@@ -3,12 +3,12 @@
     data-aos-easing="ease-in-sine"
      data-aos-duration="1300">
         <h1>Hi,<br>I'm <font color="#ff0084">Alexander</font> Keil<br>Front End Develop<font color="#35fce2">e</font>r</h1>
-        <button>Contact Me</button>
+        <a href="#contactme"><button class="draw-border">Contact Me</button></a>
     </div>
     <div data-aos="fade-left"
     data-aos-easing="ease-in-sine"
      data-aos-duration="1300">
-        <img src="assets/img/profile-img.jpg" alt="">
+        <img src="assets/img/profile-img2.jpg" alt="">
     </div>
 </div>
 <div class="arrow-icon-container">
@@ -24,7 +24,10 @@
 
 <!--footer-->
 <div class="footer">
-    <span style="margin-left:50px; font-size:20px;"><b>Contact</b></span>
+    <div>
+        <span [routerLink]="['/contact']" style="margin-left:50px; font-size:20px;"><b>Contact</b></span>
+        <span [routerLink]="['/data-protection']" style="margin-left:50px; font-size:20px;"><b>Data Protection</b></span>
+    </div>
     <div style="margin-right:50px;">
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexander-keil-9175a0241/"> <img src="assets/img/linkedin-box-fill.png" alt=""></a>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/AlexanderKHub"><img src="assets/img/github-fill.png" alt=""></a>

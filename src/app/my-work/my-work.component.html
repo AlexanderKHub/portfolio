@@ -1,14 +1,56 @@
-<div class="my-work-section">
+<div id="mywork" class="my-work-section">
     <h2 data-aos="fade-left">My Work</h2>
     <div class="project-btn-container" data-aos="fade-left">
-        <button>All</button>
-        <button>Angular</button>
-        <button>JavaScript</button>
+        <button id="all-btn" 
+        [ngClass]="{'draw-border' : !all_btn_focus, 'focus-btn' : all_btn_focus}" 
+        (click)="showAll()">All
+        </button>
+        <button id="angular-btn" 
+        [ngClass]="{'draw-border' : !angular_btn_focus, 'focus-btn' : angular_btn_focus}" 
+        (click)="showAngular()">Angular
+        </button>
+        <button id="js-btn" 
+        [ngClass]="{'draw-border' : !js_btn_focus, 'focus-btn' : js_btn_focus}" 
+        (click)="showJS()">JavaScript
+        </button>
     </div>
     <div class="project-cover-container">
-        <img data-aos="fade-left" class="project-cover" src="assets/img/epl_startscreen.png">
-        <img data-aos="fade-left" class="project-cover" src="assets/img/pokedex-cover.png">
-        <img data-aos="fade-left" class="project-cover" src="assets/img/slack-cover.png">
-        <img data-aos="fade-left" class="project-cover" src="assets/img/rof_screen.png">
+        <div id="elpolloloco" class="container" data-aos="fade-left">
+            <img class="project-cover image" src="assets/img/epl_startscreen.png">
+            <div class="middle">
+              <a target="_blank" rel="noopener noreferrer" href="http://alexander-keil.developerakademie.net/devaka/elpolloloco/index.html">
+                <div class="text">El Pollo Loco</div>
+              </a>
+            </div>
+        </div>
+
+        <div id="pokedex" class="container" data-aos="fade-left">
+            <img class="project-cover image" src="assets/img/pokedex-cover.png">           
+            <div class="middle">
+              <a target="_blank" rel="noopener noreferrer" href="http://alexander-keil.developerakademie.net/devaka/pokemon/pokedex/index.html">
+               <div class="text">Pokedex</div>
+              </a>
+            </div>
+        </div>
+        
+        <div id="slackclone" class="container" data-aos="fade-left">
+            <img class="project-cover image" src="assets/img/slack-cover.png">
+            <div class="middle">
+              <a target="_blank" rel="noopener noreferrer" href="http://gruppe-248.developerakademie.net">
+                <div class="text">Slack Clone</div>
+              </a>
+            </div>
+        </div>
+
+        <div id="ringoffire" class="container" data-aos="fade-left">
+            <img class="project-cover image" src="assets/img/rof_screen.png">
+            <div class="middle">
+              <a target="_blank" rel="noopener noreferrer" href="https://ring-of-fire-53219.web.app/">
+                <div class="text">Ring of Fire</div>
+              </a>
+            </div>
+        </div>
+        
+        
     </div>  
 </div>

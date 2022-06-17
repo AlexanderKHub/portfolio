@@ -9,6 +9,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { ContactComponent } from './contact/contact.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     MyWorkComponent,
     AboutMeComponent,
     ContactMeComponent,
+    ContactComponent,
+    DataProtectionComponent,
     
   ],
   imports: [

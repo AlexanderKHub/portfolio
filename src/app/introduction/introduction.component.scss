@@ -1,10 +1,10 @@
 .introduction-container{
-    height:70vh;
+    min-height:70vh;
     color:white;
     background-color:black;
     margin-left:20%;
     margin-right:20%;
-    padding-top:160px;
+    padding-top:200px;
     display:flex;
     justify-content:space-between;
     h1{
@@ -22,10 +22,9 @@
         height:60px;
         margin-top:64px;
         background-color:black;
-        border:1px solid #35fce2;
-        color:#35fce2;
+        border:none;
         &:hover{
-            
+            cursor:pointer;
         }
     }
 }
@@ -54,5 +53,20 @@
             cursor:pointer;
             transform: scale(1.2);
         }
+    }
+    span{
+        &:hover{
+            cursor:pointer;
+            text-decoration:underline;
+        }
+    }
+}
+
+@media (max-width: 1125px){
+    .introduction-container{
+        margin-top:100px;
+        flex-direction:column-reverse;
+        align-items:center;
+        padding-top:100px;
     }
 }

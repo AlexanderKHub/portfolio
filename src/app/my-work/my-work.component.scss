@@ -17,15 +17,20 @@
 .project-btn-container{
     margin-top:96px;
     width:700px;
+    gap:32px;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
     button{
         height:50px;
         width:150px;
         background-color:black;
-        border:1px solid #ff0084;
-        color: #ff0084;
+        transition:0.2s;
+        border:none;
+        &:hover{
+          transform: scale(1.1);
+          cursor:pointer;
+        }
     }
 }
 
@@ -41,6 +46,78 @@
 
 .project-cover{
     margin:40px;
+    height:300px;
     width:450px;
     box-shadow: 5px 5px 30px -5px #dbdbdb;
 }
+
+  
+  .image {
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+  
+  .middle {
+    transition: 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: white;
+    border: 3px solid #ff0084;
+    color: #ff0084;
+    font-size: 16px;
+    font-weight:800;
+    padding: 20px 60px;
+    transition:0.2s ease;
+    &:hover{
+      cursor:pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .hide{
+    display:none;
+  }
+
+  .focus-btn{
+    border: 4px solid #ff0084 !important;
+    color:#ff0084 !important;
+  }
+
+  @media (max-width: 1770px){
+    .project-cover{
+      width:400px !important;
+    }
+  }
+
+  @media (max-width:1600px){
+    .project-cover{
+      width:300px !important;
+    }
+  }
+
+  @media(max-width: 1270px){
+    .project-cover{
+      width:450px !important;
+    }
+  }

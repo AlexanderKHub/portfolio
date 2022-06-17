@@ -1,7 +1,18 @@
-<div class="contact-me-section">
+<div id="contactme" class="contact-me-section">
     <div class="contact-me-content">
         <h1>Contact me:</h1>
         <span>Get in touch via the form below, or by e-mailing <font color="#35fce2"><b>alexander.huesten@web.de</b></font></span>
         
+        <div class="contact-form">
+            <form action="http://alexander-keil.developerakademie.net/send_mail/send_mail.php" method="POST">
+                <span>Name<font color="red">*</font></span>
+                <input required type="text" placeholder="Please enter your name" name="name">
+                <span>Your E-Mail<font color="red">*</font> </span>
+                <input required type="email" placeholder="Please enter your e-mail" name="email">
+                <span>Your Message<font color="red">*</font></span>
+                <textarea required name="" id="" cols="30" rows="10" placeholder="Please enter your message" name="message"></textarea>
+                <button class="draw-border" type="submit">Send</button>
+            </form>
+        </div>
     </div>
 </div>
