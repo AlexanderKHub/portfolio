@@ -33,6 +33,9 @@
     justify-content: center;
     flex-direction: column;
     position:relative;
+    span{
+        text-align:center;
+    }
 }
 
 .my-skills-icon-container{
@@ -57,28 +60,58 @@
     }
 }
 
- @media(max-width:950px){
-    .my-skills-container{
-        width:80%;
-        padding-bottom:100px;
+ @media(max-width:850px){
+    .my-skills-white-box{
+        width:26% !important;
     }
- }
+}
+
+@media(max-width:750px){
+    .my-skills-white-box{
+        width:20% !important;
+    }
+    .my-skills-container{
+        width:100%;
+    }
+}
+
 
  @media(max-width:650px){
     .my-skills-icon-container{
         height:50px;
         width:50px;
+        margin-top: -25px;
     }
 
     .my-skills-white-box{
-        width:100px !important;
         font-size:14px;
         span{
             text-align:center;
         }
     }
+ }
 
-    .my-skills-icon-container{
-        margin-top: -25px;
+ @media(max-width:600px){
+    .my-skills-white-box{
+        width:100px;
+        height:100px;
+    }
+
+    .my-skills-container{
+        gap:40px;
     }
  }
+
+@media(max-width:400px){
+    .my-skills-icon-container{
+        height:40px;
+        width:40px;
+        margin-top: -20px;
+    }
+
+    .my-skills-white-box{
+        span{
+            font-size:12px;
+        }
+    }
+}

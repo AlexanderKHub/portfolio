@@ -71,6 +71,7 @@
   .container:hover .image {
     opacity: 0.3;
     transform: scale(1.1);
+    cursor:pointer;
   }
   
   .container:hover .middle {
@@ -78,7 +79,7 @@
   }
   
   .text {
-    background-color: white;
+    background-color: rgba(0,0,0,0.5);
     border: 3px solid #ff0084;
     color: #ff0084;
     font-size: 16px;
@@ -124,12 +125,26 @@
 
   @media(max-width: 670px){
     .project-cover{
-      width:80vw !important;
+      width:70vw !important;
     }
 
     .project-btn-container{
+      
       button{
         width:100px;
       }
     }
   }
+
+  @media (max-width: 500px){
+    .project-btn-container{
+    flex-direction:column !important;
+    margin-top:20px;
+    button{
+      width:150px;
+    }
+    }
+    .project-cover-container{
+      padding-top:unset;
+    }
+}

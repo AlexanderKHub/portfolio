@@ -37,3 +37,26 @@ header{
         padding-right:0 !important;
     }
 }
+
+@media (max-width:530px){
+    header{
+        a{
+        font-size:14px;
+    }
+    }
+}
+
+@media(max-width:450px){
+    header{
+        a{
+            font-size:12px;
+        }
+    }
+}
+
+@media(max-width: 400px){
+    header{
+        display:none;
+    }
+    
+}
