@@ -67,9 +67,19 @@
             font-size:50px !important;
         }
     }
-    .contact-form{
-        button{
-            margin-bottom: min(100px) !important;
+    
+    .contact-me-section{
+        min-height:unset;
+        h1{
+            margin-top:0 !important;
+            padding-top:20px;
+        }
+        .contact-me-content{
+            .contact-form{
+                button{
+                    margin-bottom:20px;
+                }
+            }
         }
     }
 }

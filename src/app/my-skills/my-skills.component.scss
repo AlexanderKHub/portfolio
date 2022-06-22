@@ -97,8 +97,18 @@
         height:100px;
     }
 
+    .my-skills-section{
+        min-height:unset;
+        h2{
+            padding-top:20px;
+        }
+        .my-skills-container{
+            padding-bottom:20px;
+        }
+    }
+
     .my-skills-container{
-        gap:40px;
+        gap:45px;
     }
  }
 

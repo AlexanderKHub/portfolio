@@ -137,6 +137,18 @@
     }
   }
 
+  @media(max-width:600px){
+    .my-work-section{
+      min-height:unset;
+      h2{
+        padding-top:20px;
+      }
+      .project-btn-container{
+        margin-top:40px;
+      }
+    }
+  }
+
   @media (max-width: 500px){
     .project-btn-container{
     flex-direction:column !important;

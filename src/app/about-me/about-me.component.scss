@@ -89,6 +89,12 @@
     .about-me-information-box{
         width: 100% !important;
     }
+    .about-me-section{
+        min-height:unset;
+        .about-me-container{
+            margin-top:20px;
+        }
+    }
 }
 
 
